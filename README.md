@@ -1,3 +1,3 @@
 # noveogroup.php.homework
-[eng] Homework for PHP during training in "Noveogroup" company :+1: <br />
-[ru] Домашнее задание для PHP во время обучения в компании "Novel Group".
+<span style="color:orange;">Word up[eng]</span> Homework for PHP during training in "Noveo Group" company :+1: <br />
+[ru] Домашнее задание по PHP во время стажировки в компании "Noveo Group".

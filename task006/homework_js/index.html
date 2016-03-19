@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Регистрация нового пользователя</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>   
+		<script src="js/validate.js"></script>     		
+		<script src="js/scripts.js"></script>   
+        <link rel="stylesheet" type="text/css" href="style/my.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>       
+    </head>
+    <body>
+	
+        <div id="pagecontent">
+        <form id="registration" data-toggle="validator" class="form-horizontal" role="form">  
+            <h1>Форма регистрации<small> нового пользователя</small></h1>
+            <hr>
+			
+            <div class="form-group">
+				<label for="inputName" class="col-sm-2 control-label">ФИО</label>
+				<div class="col-sm-10">
+					<input type="text" pattern="^([А-Яа-яЁё]){2,}[ ]([А-Яа-яЁё]){2,}[ ]([А-Яа-яЁё]){2,}$" maxlength="80" class="form-control" id="inputName" placeholder="Введите вашу фамилию, имя и отчество" required>
+					<span class="help-block">Поле должно содержать только русские буквы.</span>
+					<div><small></small></div>
+				</div>
+			</div>              
+                        
+			<div class="form-group">
+				<label for="inlineRadio1" class="col-sm-2 control-label">Пол</label>
+				<div class="col-sm-10">
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male" required> Мужской
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="female" required> Женский
+				</label>
+				</div>
+			</div>         
+                        
+            <div class="form-group">
+				<label for="selectcity" class="col-sm-2 control-label">Город</label>
+				<div class="col-sm-10">
+					<select id="selectcity" class="form-control">
+					  <option>Новосибирск</option>
+					  <option>Москва</option>
+					  <option>Санкт-Петербург</option>
+					  <option>Майами</option>
+					  <option>Другой</option>
+					</select>
+				</div>
+			</div>
+            
+			<div class="form-group">
+				<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" id="inputEmail3" placeholder="Введите E-mail" data-error="Введенный e-mail не правильный" required>
+					<span class="help-block with-errors"></span>
+				</div>		
+			</div>
+			
+			<div class="form-group">
+				<label for="inputLogin" class="col-sm-2 control-label">Логин</label>
+				<div class="col-sm-10">
+					<input type="text" pattern="^([A-Za-z0-9]){3,}$" maxlength="50" class="form-control" id="inputLogin" placeholder="Введите имя пользователя" required>
+					<span class="help-block">Логин должен содержать только латинские буквы и цифры.</span>
+				</div>		
+			</div>           
+			
+			<div class="form-group">
+				<label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
+				<div class="col-sm-10">
+					<input type="password" data-minlength="8" class="form-control" id="inputPassword" placeholder="Введите пароль" required>
+					<span class="help-block">Пароль должен содержать не менее 8 символов.</span>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="inputPassword2" class="col-sm-2 control-label"></label>
+				<div class="col-sm-10">
+					<input type="password" class="form-control" id="inputPassword2" placeholder="Введите пароль ещё раз" data-match="#inputPassword" data-error="Ооооупс, пароли не совпадают." required>
+					<span class="help-block with-errors"></span>
+				</div>
+			</div>           
+			
+			<div class="form-group">
+				<label for="textareaAbout" class="col-sm-2 control-label">О себе</label>
+				<div class="col-sm-10">
+					<textarea id="textareaAbout" class="form-control" rows="3" data-error="Введите любую информацию о себе." data-minlength="6" required ></textarea>
+					<span class="help-block with-errors"></span>
+				</div>
+			</div>
+            
+            <div class="form-group">
+				<label for="day" class="col-sm-2 control-label">Родился</label>
+				<div class="col-sm-10">
+					<select id="day" style="width:30% !important; display: inline-block;" class="form-control"></select>					
+					<select id="month" style="width:30% !important; display: inline-block;" class="form-control"></select>
+					<select id="year" style="width:30% !important; display: inline-block;" class="form-control"></select>   
+					<span class="help-block">Вам должно быть больше 18 лет.</span>		
+				</div>
+			</div>             
+              
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button id="submit" type="submit" class="btn btn-default">Присоединиться</button>
+					<button type="reset" class="btn btn-default">Очистить</button>
+				</div>
+			</div>            
+        </form> 
+		</div>
+    </body>
+</html>

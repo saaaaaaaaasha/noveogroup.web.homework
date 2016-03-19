@@ -1,0 +1,26 @@
+small {
+	color:#999;
+}
+body {
+	background-color: #e3e3e3 !important;
+}
+#pagecontent{
+	margin:0 auto; 
+	margin-bottom:50px; 
+	margin-top:50px; 
+	width: 700px; 
+	padding: 20px 50px; 
+	background-color: white;
+	border-radius: 5px;
+}
+
+.help-block {
+	margin: 4px !important;
+	font-size: 85%;
+}
+.help-block ul{
+	margin-bottom: 0px !important;
+}
+
+#registration h1 {text-align: center;}
+

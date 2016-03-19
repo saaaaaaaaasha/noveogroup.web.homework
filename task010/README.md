@@ -1,0 +1,19 @@
+<strong>Install:</strong><br>
+1. Extract folder "modules" under "protected";<br>
+2. Change "main.php" in "protected/config":<br>
+<pre><code>
+  return array(
+  	#...
+  	'language' => 'ru',
+  	#...
+  	'import'=>array(
+  		#...
+  		'application.modules.user.*',
+  	),
+  	#...
+  	'modules'=>array(
+  		#...
+  		'user',
+  	),
+  	#...
+</code></pre>

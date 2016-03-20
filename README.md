@@ -21,7 +21,7 @@ Updated on Oct 8, 2014
 Updated on Oct 7, 2014
 <br /><br />
 
-**task006** - :boom: :camel: home work 3 (intermediate php). <br />
+**task006** - :boom: :camel: home work 3 (html5+css and js+ajax). <br />
 Updated on Oct 13, 2014
 <br /><br />
 

@@ -1,7 +1,9 @@
 # noveogroup.php.homework
 [eng] Homework for PHP during training in "Noveo Group" company :+1: <br />
 [ru] Домашнее задание по PHP во время стажировки в компании "Noveo Group". <br />
+
 ---
+
 **task001** - :neckbeard: home work 1 (basic php). <br />
 Updated on Oct 5, 2014
 <br /><br />
@@ -43,8 +45,7 @@ Updated on Nov 1, 2014
 Updated on Nov 1, 2014
 <br /><br />
 
-**task012** - :octocat: api on slim framework. <br />
+**task012** - :octocat: home work 9 (api on slim framework). <br />
 Updated on Nov 19, 2014
 <br /><br />
-
 
